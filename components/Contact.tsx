@@ -45,9 +45,12 @@ export default function Contact() {
                 <span>Plus Code: {SITE.plusCode}</span>
               </div>
 
-              <div className="flex items-center gap-3.5 border-t border-white/25 py-3 font-semibold">
-                <Clock size={22} className="shrink-0" aria-hidden />
-                <span>{t(`தினமும்: காலை 6:00 – இரவு 9:00`, `Daily: ${SITE.hours}`)}</span>
+              <div className="flex items-start gap-3.5 border-t border-white/25 py-3 font-semibold">
+                <Clock size={22} className="mt-0.5 shrink-0" aria-hidden />
+                <div className="space-y-0.5">
+                  <div>{t("காலை 7:30–8:30, 8:30–9:30 | மாலை 7:00–8:00", "7:30–8:30 AM · 8:30–9:30 AM · 7:00–8:00 PM")}</div>
+                  <div className="text-xs font-normal opacity-80">{t("பெண்களுக்கு மட்டும்: 9:30 AM–12:30 PM (சலுகை)", "Women-only: 9:30 AM–12:30 PM (discounts)")}</div>
+                </div>
               </div>
 
               <a

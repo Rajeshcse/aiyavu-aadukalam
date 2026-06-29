@@ -9,10 +9,11 @@ export const SITE = {
   mapsLink: "https://maps.app.goo.gl/fh7AhMFC3msx8JvE8",
   mapsEmbed:
     "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sAiyavu+Aadukalam+Badminton+Court+Ariyankuppam+Puducherry",
-  hours: "6:00 AM – 9:00 PM",
+  hours: "7:30–9:30 AM & 7:00–8:00 PM",
+  hoursWomen: "9:30 AM–12:30 PM (Discounts Available)",
   rating: 4.6,
   reviewCount: 60,
   /** Owner's real Cal.com event link — username/event-slug */
-  calLink: "rajesh-paramanandam-smybe5/court-booking",
+  calLink: "elabarathi/court-booking",
   url: "https://aiyavu-aadukalam.vercel.app",
 } as const;

@@ -8,12 +8,9 @@ import { useLang } from "./LanguageProvider";
 import { SITE } from "@/lib/site";
 
 const POINTS = [
-  { ta: "குழந்தைகளுக்கான சிறப்பு பயிற்சி வகுப்புகள்", en: "Dedicated coaching batches for kids" },
-  { ta: "பரிசுகளுடன் வழக்கமான உள்ளூர் போட்டிகள்", en: "Regular local tournaments with prizes" },
-  {
-    ta: "அனைத்து நிலை வீரர்களும் வரவேற்கப்படுகிறார்கள்",
-    en: "All skill levels welcome — beginner to advanced",
-  },
+  { ta: "திங்கள் – வெள்ளி, மாலை 5:00 – 6:00 மணி", en: "Monday to Friday · 5:00 PM – 6:00 PM" },
+  { ta: "நுழைவுக் கட்டணம் ₹1,500 | மாத கட்டணம் ₹800", en: "Admission ₹1,500 · Monthly ₹800" },
+  { ta: "பயிற்சியாளர்: T. எலபரதி — 8525895844", en: "Coach: T. Elabarathi · 8525895844" },
 ];
 
 export default function Coaching() {

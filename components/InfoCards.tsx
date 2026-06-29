@@ -11,8 +11,8 @@ const CARDS = [
     accent: "border-brand-pink",
     titleTa: "நேரம்",
     titleEn: "Timings",
-    bodyTa: "காலை 6:00 முதல் இரவு 9:00 வரை — வாரம் முழுவதும்.",
-    bodyEn: "6:00 AM to 9:00 PM — all 7 days of the week.",
+    bodyTa: "காலை 7:30–8:30, 8:30–9:30 | மாலை 7:00–8:00 | பெண்களுக்கு மட்டும்: காலை 9:30–12:30 (சலுகை விலை உண்டு).",
+    bodyEn: "7:30–8:30 AM, 8:30–9:30 AM, 7:00–8:00 PM | Women-only: 9:30 AM–12:30 PM (discounts available).",
   },
   {
     Icon: Warehouse,

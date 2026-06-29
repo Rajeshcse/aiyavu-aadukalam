@@ -19,24 +19,36 @@ interface Plan {
 
 const PLANS: Plan[] = [
   {
+    titleTa: "தினசரி விளையாட்டு",
+    titleEn: "Daily Play",
+    price: "₹100",
+    perTa: "ஒருவருக்கு / நாள் (குறைந்தது 4 பேர்)",
+    perEn: "per head / day · min. 4 people",
+    features: [
+      { ta: "நுழைவுக் கட்டணம் இல்லை", en: "No admission fee" },
+      { ta: "எந்த நாளும் வரலாம்", en: "Walk in any day" },
+      { ta: "உள்ளரங்க கோர்ட்", en: "Indoor court" },
+    ],
+  },
+  {
     titleTa: "மாதாந்திர உறுப்பினர்",
     titleEn: "Monthly Membership",
-    price: "₹800",
+    price: "₹500",
     perTa: "ஒருவருக்கு / மாதம்",
     perEn: "per head / month",
     popular: true,
     features: [
       { ta: "வாரம் முழுவதும் விளையாடலாம்", en: "Play all days of the week" },
-      { ta: "காலை 6 – இரவு 9 மணி", en: "6 AM – 9 PM access" },
+      { ta: "காலை & மாலை ஸ்லாட்கள்", en: "Morning & evening slots" },
       { ta: "உள்ளரங்க கோர்ட்", en: "Indoor court" },
     ],
   },
   {
     titleTa: "வார இறுதி மட்டும்",
     titleEn: "Weekends Only",
-    price: "₹500",
-    perTa: "ஒருவருக்கு / மாதம்",
-    perEn: "per head / month",
+    price: "₹300",
+    perTa: "ஒருவருக்கு / மாதம் (சனி & ஞாயிறு)",
+    perEn: "per head / month (Sat & Sun)",
     features: [
       { ta: "சனி & ஞாயிறு விளையாட்டு", en: "Saturday & Sunday play" },
       { ta: "வேலை நாட்களில் பிஸியா? இது உங்களுக்கே!", en: "Busy on weekdays? This one's for you!" },
@@ -45,16 +57,14 @@ const PLANS: Plan[] = [
   },
   {
     titleTa: "பேட்மிண்டன் பயிற்சி",
-    titleEn: "Coaching",
-    price: null,
-    priceTa: "விசாரிக்கவும்",
-    priceEn: "Ask Us",
-    perTa: "விவரங்களுக்கு அழைக்கவும்",
-    perEn: "call for details",
+    titleEn: "Badminton Coaching",
+    price: "₹800",
+    perTa: "ஒருவருக்கு / மாதம்",
+    perEn: "per head / month",
     features: [
-      { ta: "அனுபவமிக்க பயிற்சியாளர்", en: "Experienced coach" },
-      { ta: "குழந்தைகள் & பெரியவர்கள்", en: "Kids & adults welcome" },
-      { ta: "உள்ளூர் போட்டிகள்", en: "Local tournaments" },
+      { ta: "நுழைவுக் கட்டணம் ₹1,500 (ஒரு முறை மட்டும்)", en: "Admission ₹1,500 (one-time)" },
+      { ta: "திங்கள்–வெள்ளி · மாலை 5:00–6:00", en: "Mon–Fri · 5:00–6:00 PM" },
+      { ta: "பயிற்சியாளர்: T. எலபரதி", en: "Coach: T. Elabarathi" },
     ],
   },
 ];
@@ -75,7 +85,7 @@ export default function Pricing() {
           titleTa="எளிய, நேர்மையான விலை"
           titleEn="Simple, Honest Pricing"
         />
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {PLANS.map((plan, i) => (
             <Reveal key={plan.titleEn} delay={i * 0.1}>
               <div className="relative h-full overflow-hidden rounded-[20px] bg-white p-8 text-center text-gray-900 transition-all duration-300 hover:-translate-y-2.5 hover:scale-[1.02] hover:shadow-2xl">
@@ -119,8 +129,8 @@ export default function Pricing() {
           <div className="mt-9 flex items-center justify-center gap-3 rounded-xl border-2 border-dashed border-brand-lime bg-brand-lime/15 p-4 text-center font-bold text-brand-lime">
             <PiggyBank size={24} className="shrink-0" aria-hidden />
             {t(
-              "சேரும்போது ₹1000 முன்பணம் (Advance) செலுத்த வேண்டும்.",
-              "A one-time advance of ₹1000 is payable when you join.",
+              "உறுப்பினராக சேரும்போது ₹1000 நுழைவுக் கட்டணம் (ஒரு முறை மட்டும்) செலுத்த வேண்டும். தினசரி விளையாட்டுக்கு நுழைவுக் கட்டணம் இல்லை.",
+              "A one-time admission fee of ₹1000 is payable when joining as a member. Daily play requires no admission fee.",
             )}
           </div>
         </Reveal>
